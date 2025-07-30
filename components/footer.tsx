@@ -1,6 +1,6 @@
 import logo from '@/public/logos/logo-mdss-withText.png'
 import Link from 'next/link'
-
+import Image from 'next/image'
 const menuItems = [
     { name: 'Team', href: 'team' },
     { name: 'Contact', href: 'contact' },
@@ -15,7 +15,7 @@ export default function FooterSection() {
                     href="/"
                     aria-label="home"
                     className="mx-auto block size-fit w-40 object-contain">
-                    <img src={logo.src}  />
+                    <Image src={logo.src} width={logo.width} height={logo.height}  alt="logo" />
                 
                 </Link>
 

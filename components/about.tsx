@@ -1,9 +1,9 @@
 'use client';
 import Masonry from "react-masonry-css";
-import react,{use, useRef} from 'react';
+import  {useRef} from 'react';
 import outreach from "@/public/other/Outreach-Image1.png";
 import { motion , useInView} from "framer-motion";
-import { ClockFadingIcon, Group, User } from 'lucide-react';
+import { ClockFadingIcon,  User } from 'lucide-react';
 import WhoAreWe from '@/public/other/WhoWeAre-Image.png';
 import Orignals from '@/public/other/Orginal-image.png';
 import Headshot from '@/public/other/headShot-image.png';
@@ -35,7 +35,7 @@ export default function About() {
           transition={{ duration: isInView?0:2}}
           animate={{ y: 0 }}
         >
-          "To build a better future through innovative technology and community engagement."
+         &quot;To build a better future through innovative technology and community engagement.  &quot;
         </motion.p>
       </section>
 

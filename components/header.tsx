@@ -2,9 +2,8 @@
 import Link from 'next/link'
 import Logo  from '@/public/logos/logo-mdss-withText.png'
 import { Menu, X } from 'lucide-react'
-import { Button } from '@/components/ui/button'
 import React from 'react'
-
+import Image from 'next/image'
 const menuItems = [
     { name: 'Team', href: 'team' },
     { name: 'Contact', href: 'contact' },
@@ -25,7 +24,7 @@ export const HeroHeader = () => {
                                 href="/"
                                 aria-label="home"
                                 className="flex items-center space-x-2 h-10 w-45 justify-end object-contain">
-                                <img src={Logo.src}  />
+                                <Image src={Logo.src} width={Logo.width} height={Logo.height}  alt='logo'/>
                                 
                             </Link>
 

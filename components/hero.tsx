@@ -2,11 +2,13 @@
 import React from 'react'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import Image from '@/public/other/hero_1.jpg'
+import Hero from '@/public/other/hero_1.jpg'
 import { HeroHeader } from './header'
 import { InfiniteSlider } from '@/components/ui/infinite-slider'
 import { ProgressiveBlur } from '@/components/ui/progressive-blur'
 import { motion, hover, easeIn, easeInOut } from 'framer-motion'
+import Image from 'next/image'
+
 
 
 import logoWaterJet from '@/public/logos/logo-WaterJet.png'
@@ -66,7 +68,7 @@ export default function HeroSection() {
                             </div>
                           
                                 <motion.img
-                                    src={Image.src}
+                                    src={Hero.src}
                                     initial={{ opacity: 0, x: 60 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ duration: 1 }}
@@ -94,12 +96,12 @@ export default function HeroSection() {
                                     <motion.div whileHover={{ scale: 1.2,   }} className="flex items-center">
                                         <Link href="https://www.victoriawaterjet.ca/" target="_blank" className='cursor-pointer'>
 
-                                        <img
+                                        <Image
                                             className="mx-auto h-14 w-fit dark:invert"
                                             src={logoWaterJet.src}
                                             alt="Column Logo"
                                             height="16"
-                                            width="auto"
+                                            width={logoWaterJet.width}
                                         />
                                         </Link>
 
@@ -107,12 +109,13 @@ export default function HeroSection() {
                                      <motion.div whileHover={{ scale: 1.2,  }} className="flex items-center">
                                         <Link href="https://www.onefurall.com/" target="_blank" className='cursor-pointer'>
 
-                                            <img
+                                            <Image
                                                 className="mx-auto h-14 w-fit dark:invert "
                                                 src={logoOneFurAll.src}
                                                 alt="Column Logo"
                                                 height="16"
-                                                width="auto"
+                                                width={logoOneFurAll.width}
+
                                             />
                                         </Link>
 
@@ -121,13 +124,14 @@ export default function HeroSection() {
                                       <motion.div whileHover={{ scale: 1.2,  }} className="flex items-center">
                                         <Link href="https://coastalreign.com/?srsltid=AfmBOopsEm97gmplVGNIdlVZUCcVRkpbWDd_PaCZFAJjBFEuhNhXg9Fz" target="_blank" className='cursor-pointer'>
 
-                                        <img
+                                        <Image
                                         
                                             className="mx-auto h-14 w-fit dark:invert"
                                             src={logoCoastalReign.src}
                                             alt="Column Logo"
                                             height="16"
-                                            width="auto"
+                                            width={logoCoastalReign.width}
+
                                         />
                                         </Link>
 
@@ -136,24 +140,26 @@ export default function HeroSection() {
                                      <motion.div whileHover={{ scale: 1.2,   }} className="flex pt-1 items-center">
                                         <Link href="https://uvicroboticsclub.wordpress.com/" target="_blank" className='cursor-pointer'>
 
-                                        <img
+                                        <Image
                                             className="mx-auto h-60 w-fit dark:invert"
                                             src={logoUvicRobotics.src}
                                             alt="Column Logo"
                                             height="16"
-                                            width="auto"
+                                            width={logoUvicRobotics.width}
+                                            
                                         />
                                         </Link>
                                     </motion.div>
 
                                        <motion.div whileHover={{ scale: 1.2,   }} className="flex pt-1 items-center">
                                         <Link href="https://www.uvic.ca/ecs/index.php" target="_blank" className='cursor-pointer'>
-                                            <img
+                                            <Image
                                                 className="mx-auto h-30 w-fit dark:invert"
                                                 src={logoUVICECS.src}
                                                 alt="Column Logo"
                                                 height="16"
-                                                width="auto"
+                                                width={logoUVICECS.width}
+
                                             />
                                         </Link>
 

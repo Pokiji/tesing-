@@ -5,7 +5,7 @@ import Extra from "@/components/extra";
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <Hero/>
       <About />
       <Extra/>
       <Footer />

@@ -1,5 +1,5 @@
 import { HeroHeader } from './header'
-import {Accordion, AccordionItem} from "@heroui/accordion";
+// import {Accordion, AccordionItem} from "@heroui/accordion";
 const ProgrammingPurple = [
     {
         name: 'Alex',
