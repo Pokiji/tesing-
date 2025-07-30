@@ -6,8 +6,8 @@ export default function TeamPage() {
   return (
     <main>
       <HeroHeader />
-      <TeamPurple></TeamPurple>
-      <TeamYellow></TeamYellow>
+      {/* <TeamPurple></TeamPurple>
+      <TeamYellow></TeamYellow> */}
       <Footer></Footer>
     </main>
 
